@@ -62,7 +62,7 @@ user_input=input_to_index(user_input)
 
 if valid_move?(board, index=user_input)==true
   board[index]=field
-  move(board, index, input=field)
+  move(board, index, input)
   display_board(board)
 elsif valid_move?(board, index=user_input)==false
     while valid_move?(board, index=user_input)==false
